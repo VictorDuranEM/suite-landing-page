@@ -4,7 +4,7 @@ type PhoneImageProps = {
 
 export const PhoneImage: React.FC<PhoneImageProps> = ({ className }) => {
   return (
-    <picture>
+    <picture className={className}>
       <source media="(min-width: 768px)"
         srcSet="/image-hero-portrait.webp,
                 /image-hero-portrait@2x.webp 2x" />
